@@ -15,7 +15,7 @@ export default function Home() {
   return (
       <Layout>
           <Seo
-              title="Busca tu colegio ideal"
+              title="Estamos donde más nos necesitas"
           />
           <NavFixed/>
           <HeaderHome/>
