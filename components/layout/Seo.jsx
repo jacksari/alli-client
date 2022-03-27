@@ -4,26 +4,26 @@ import { NextSeo } from 'next-seo';
 function Seo({title, description, img, url}) {
     return (
         <NextSeo
-            title={title ? `${title} | Micole` : 'Micole App'}
-            description={ description ? description : 'Tu búsqueda de colegios comienza aquí' }
-            canonical={ url ? url : 'https://micole.pe/' }
+            title={title ? `${title} | Alli` : 'Alli App'}
+            description={ description ? description : 'Siempre estamos donde más nos necesitas' }
+            canonical={ url ? url : 'https://alli.pe/' }
             openGraph={{
-                url: url ? url : 'https://micole.pe/',
+                url: url ? url : 'https://alli.pe/',
                 title: title ? title : 'Micole App' ,
-                description: description ? description : 'Tu búsqueda de colegios comienza aquí',
+                description: description ? description : 'Siempre estamos donde más nos necesitas',
                 type: 'website',
                 images: [
                     {
                         url: img ? img : `https://res.cloudinary.com/mikunaalli/image/upload/v1641935341/micole/Group_54_bwt6qs.jpg`,
                         width: 256,
                         height: 256,
-                        alt: description ? description : 'Tu búsqueda de colegios comienza aquí',
+                        alt: description ? description : 'Siempre estamos donde más nos necesitas',
                     },
                     {
                         url: img ? img : `https://res.cloudinary.com/mikunaalli/image/upload/v1641935341/micole/Group_54_bwt6qs.jpg`,
                         width: 500,
                         height: 500,
-                        alt: description ? description : 'Tu búsqueda de colegios comienza aquí',
+                        alt: description ? description : 'Siempre estamos donde más nos necesitas',
                     },
                     {
                         url: img ? img : `https://res.cloudinary.com/mikunaalli/image/upload/v1641935341/micole/Group_54_bwt6qs.jpg`,
@@ -35,11 +35,11 @@ function Seo({title, description, img, url}) {
                         url: img ? img : `https://res.cloudinary.com/mikunaalli/image/upload/v1641935341/micole/Group_54_bwt6qs.jpg`,
                         width: 900,
                         height: 800,
-                        alt: description ? description : 'Tu búsqueda de colegios comienza aquí',
+                        alt: description ? description : 'Siempre estamos donde más nos necesitas',
                     },
                     { url: img ? img : `https://res.cloudinary.com/mikunaalli/image/upload/v1641935341/micole/Group_54_bwt6qs.jpg`, },
                 ],
-                site_name: 'Micole App',
+                site_name: 'Alli App',
             }}
             twitter={{
                 handle: '@handle',
@@ -48,7 +48,7 @@ function Seo({title, description, img, url}) {
             }}
             languageAlternates={[{
                 hrefLang: 'es-ES',
-                href: 'https://micole.pe/',
+                href: 'https://alli.pe/',
             }]}
             additionalMetaTags={[
                 {
