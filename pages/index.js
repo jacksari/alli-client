@@ -21,6 +21,7 @@ export default function Home() {
           <HeaderHome/>
 
 
+          {/*
           <div className="bg-gray-100 py-16">
               <div className="w-full mx-auto max-w-5xl sm:px-6 lg:px-8">
                   <h2 className="text-center font-bold text-3xl mb-12 text-black2">¿Por qué escoger MiCole.pe?</h2>
@@ -127,6 +128,11 @@ export default function Home() {
                   </div>
               </div>
           </div>
+
+          */}
+
+
+
       </Layout>
   )
 }
