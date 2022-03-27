@@ -14,30 +14,30 @@ function Seo({title, description, img, url}) {
                 type: 'website',
                 images: [
                     {
-                        url: img ? img : `https://res.cloudinary.com/mikunaalli/image/upload/v1641935341/micole/Group_54_bwt6qs.jpg`,
+                        url: img ? img : `https://res.cloudinary.com/mikunaalli/image/upload/v1648391353/alli/iniciosuperior_noeyuw.png`,
                         width: 256,
                         height: 256,
                         alt: description ? description : 'Siempre estamos donde más nos necesitas',
                     },
                     {
-                        url: img ? img : `https://res.cloudinary.com/mikunaalli/image/upload/v1641935341/micole/Group_54_bwt6qs.jpg`,
+                        url: img ? img : `https://res.cloudinary.com/mikunaalli/image/upload/v1648391353/alli/iniciosuperior_noeyuw.png`,
                         width: 500,
                         height: 500,
                         alt: description ? description : 'Siempre estamos donde más nos necesitas',
                     },
                     {
-                        url: img ? img : `https://res.cloudinary.com/mikunaalli/image/upload/v1641935341/micole/Group_54_bwt6qs.jpg`,
+                        url: img ? img : `https://res.cloudinary.com/mikunaalli/image/upload/v1648391353/alli/iniciosuperior_noeyuw.png`,
                         width: 800,
                         height: 600,
                         alt: description ? description : 'Tu búsqueda de colegios comienza aquí',
                     },
                     {
-                        url: img ? img : `https://res.cloudinary.com/mikunaalli/image/upload/v1641935341/micole/Group_54_bwt6qs.jpg`,
+                        url: img ? img : `https://res.cloudinary.com/mikunaalli/image/upload/v1648391353/alli/iniciosuperior_noeyuw.png`,
                         width: 900,
                         height: 800,
                         alt: description ? description : 'Siempre estamos donde más nos necesitas',
                     },
-                    { url: img ? img : `https://res.cloudinary.com/mikunaalli/image/upload/v1641935341/micole/Group_54_bwt6qs.jpg`, },
+                    { url: img ? img : `https://res.cloudinary.com/mikunaalli/image/upload/v1648391353/alli/iniciosuperior_noeyuw.png`, },
                 ],
                 site_name: 'Alli App',
             }}

@@ -10,6 +10,40 @@ import image from "../assets/logo.png";
 import BtnSecondary from "../components/layout/BtnSecondary";
 import Seo from "../components/layout/Seo";
 import NavFixed from "../components/layout/NavFixed";
+import BtnPrimary from "../components/layout/BtnPrimary";
+
+const canales = [
+    {
+        name: 'Panamericana',
+        image: 'https://res.cloudinary.com/mikunaalli/image/upload/v1648391508/alli/Rectangle_109_z32zil.png',
+        rating: 1000,
+    },
+    {
+        name: 'RPP',
+        image: 'https://res.cloudinary.com/mikunaalli/image/upload/v1648391508/alli/Rectangle_107_1_c8zbq9.png',
+        rating: 1100,
+    },
+    {
+        name: 'América TV',
+        image: 'https://res.cloudinary.com/mikunaalli/image/upload/v1648391508/alli/Rectangle_106_1_i4sjt9.png',
+        rating: 1140,
+    },
+    {
+        name: 'ATV',
+        image: 'https://res.cloudinary.com/mikunaalli/image/upload/v1648391508/alli/Rectangle_109_1_bylshm.png',
+        rating: 1150,
+    },
+    {
+        name: 'Global',
+        image: 'https://res.cloudinary.com/mikunaalli/image/upload/v1648391508/alli/Rectangle_107_xfz9mx.png',
+        rating: 1130,
+    },
+    {
+        name: 'Latina',
+        image: 'https://res.cloudinary.com/mikunaalli/image/upload/v1648391508/alli/Rectangle_106_uuuqik.png',
+        rating: 1140,
+    },
+]
 
 export default function Home() {
   return (
@@ -20,6 +54,33 @@ export default function Home() {
           <NavFixed/>
           <HeaderHome/>
 
+          <div className="bg-gray-100 py-16">
+              <div className="w-full mx-auto max-w-6xl sm:px-6 lg:px-8">
+                  <h2 className="text-center font-bold text-3xl mb-12 text-black2">Los canales con más denuncias</h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8 m-12">
+                      {
+                          canales.map(item => (
+                              <div key={item.image} className="bg-white p-8 md:p-16 md:pb-8 rounded text-center shadow-sm relative">
+                                  <img src={item.image} alt="" className="object-cover"/>
+                                  <h3 className="mt-2 text-xl text-primary-500 md:mt-4 md:text-2xl">{ item.name }</h3>
+                                  <div className="h-16 w-16 flex items-center justify-center bg-primary-500 rounded-full absolute top-8 right-8">
+                                      <p className=" text-white text-xl">{ item.rating }</p>
+                                  </div>
+                              </div>
+                          ))
+                      }
+                  </div>
+
+                  <div className=" p-3 mt-10 rounded flex flex-col items-center justify-center">
+
+                      <h3 className="text-center font-bold text-3xl mb-12 text-black2">Tu denuncia cuenta, te necesitamos</h3>
+                      <BtnPrimary
+                          title="Ver más"
+                      />
+                  </div>
+              </div>
+
+          </div>
 
           {/*
           <div className="bg-gray-100 py-16">
