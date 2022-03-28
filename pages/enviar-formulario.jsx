@@ -27,6 +27,7 @@ class EnviarFormulario extends Component {
 
 
                 <input type="email" className="focus:outline-none border border-gray-300 px-6 py-2 rounded w-72 mt-4" placeholder="correo@correo.com"/>
+                <h1>Version 1</h1>
 
             </Layout>
         );
